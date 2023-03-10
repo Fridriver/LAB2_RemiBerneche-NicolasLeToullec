@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.76, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1732596676262594034}
   - {fileID: 3536940137267081619}
@@ -47,6 +48,7 @@ GameObject:
   - component: {fileID: 3536940137267081619}
   - component: {fileID: 2863290765402688940}
   - component: {fileID: 8735669904804369038}
+  - component: {fileID: 1161375433644253620}
   m_Layer: 0
   m_Name: House_3_Beams_Area
   m_TagString: Untagged
@@ -64,6 +66,7 @@ Transform:
   m_LocalRotation: {x: 0.50000006, y: 0.50000006, z: -0.49999994, w: -0.5}
   m_LocalPosition: {x: 0.19520217, y: 2.2486453, z: -22.637735}
   m_LocalScale: {x: 0.13289757, y: 0.13289757, z: 0.13289757}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075135266229731141}
   m_RootOrder: 1
@@ -118,6 +121,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1161375433644253620
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994486788761849504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0000079, y: 43.670067, z: 42.95037}
+  m_Center: {x: 0.00000010427712, y: -1.3137739, z: 1.4357069}
 --- !u!1 &3708905773861137089
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +145,7 @@ GameObject:
   - component: {fileID: 1732596676262594034}
   - component: {fileID: 9147161164897459005}
   - component: {fileID: 4625357186082694870}
+  - component: {fileID: 3120455445290883104}
   m_Layer: 0
   m_Name: House_3_Base
   m_TagString: Untagged
@@ -146,6 +163,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.3749161, y: 1.5166073, z: -22.516003}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075135266229731141}
   m_RootOrder: 0
@@ -200,6 +218,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3120455445290883104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3708905773861137089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7738705, y: 3.1, z: 5.7738705}
+  m_Center: {x: 0.37491596, y: 0.028007448, z: 0.032711864}
 --- !u!1 &4495959506766137182
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +242,7 @@ GameObject:
   - component: {fileID: 1766123988501544923}
   - component: {fileID: 3529321850744537257}
   - component: {fileID: 6062285139441320297}
+  - component: {fileID: 1644794781548391168}
   m_Layer: 0
   m_Name: House_3_Windows
   m_TagString: Untagged
@@ -228,6 +260,7 @@ Transform:
   m_LocalRotation: {x: 0.50013345, y: -0.49983653, z: 0.5001346, w: 0.4998953}
   m_LocalPosition: {x: -0.37661052, y: 1.2680664, z: -22.766666}
   m_LocalScale: {x: 0.49764743, y: 0.44305855, z: 0.43015182}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075135266229731141}
   m_RootOrder: 5
@@ -282,6 +315,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1644794781548391168
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4495959506766137182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.33576, y: 9.608627, z: 2.2171175}
+  m_Center: {x: 0.5060241, y: 0.06083271, z: 0.025217248}
 --- !u!1 &6280427269337924511
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,6 +339,7 @@ GameObject:
   - component: {fileID: 1485499914914013345}
   - component: {fileID: 8585849959747612056}
   - component: {fileID: 5437080904588178177}
+  - component: {fileID: 7350798453545657031}
   m_Layer: 0
   m_Name: House_3_Door
   m_TagString: Untagged
@@ -310,6 +357,7 @@ Transform:
   m_LocalRotation: {x: 0.50013345, y: -0.49983653, z: 0.5001346, w: 0.4998953}
   m_LocalPosition: {x: -2.5511656, y: 0.9825342, z: -21.6212}
   m_LocalScale: {x: 0.447421, y: 0.44305855, z: 0.43015182}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075135266229731141}
   m_RootOrder: 2
@@ -364,6 +412,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7350798453545657031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6280427269337924511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7547326, y: 0.21831279, z: 4.4615545}
+  m_Center: {x: 0.033008758, y: -0.004048176, z: -0.00000023724725}
 --- !u!1 &6448316072748571620
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +436,7 @@ GameObject:
   - component: {fileID: 2226496759117980220}
   - component: {fileID: 8377669150012628259}
   - component: {fileID: 4922467605112892072}
+  - component: {fileID: 3435212462779986248}
   m_Layer: 0
   m_Name: House_3_Door_Platband
   m_TagString: Untagged
@@ -392,6 +454,7 @@ Transform:
   m_LocalRotation: {x: -3.1255886e-15, y: 0.000000004779651, z: -0.035573766, w: 0.99936706}
   m_LocalPosition: {x: -2.73418, y: 1.3119289, z: -21.565786}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075135266229731141}
   m_RootOrder: 3
@@ -446,6 +509,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3435212462779986248
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6448316072748571620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21310748, y: 2.1616144, z: 1.6312635}
+  m_Center: {x: -0.0017877017, y: -0.23185602, z: -0.002650708}
 --- !u!1 &9075690030086313125
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,6 +533,7 @@ GameObject:
   - component: {fileID: 5836398521507337899}
   - component: {fileID: 1232146361795302954}
   - component: {fileID: 8913311817631539987}
+  - component: {fileID: 4017240246720550109}
   m_Layer: 0
   m_Name: House_3_Stairs_to_Roof
   m_TagString: Untagged
@@ -474,6 +551,7 @@ Transform:
   m_LocalRotation: {x: 0.13362578, y: 0, z: -0, w: 0.9910319}
   m_LocalPosition: {x: 0.8526007, y: 1.6287785, z: -25.80882}
   m_LocalScale: {x: 0.5229182, y: 0.9999999, z: 0.9999999}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2075135266229731141}
   m_RootOrder: 4
@@ -528,3 +606,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4017240246720550109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9075690030086313125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6260836, y: 3.6027434, z: 0.98765814}
+  m_Center: {x: -0.008211671, y: -0.018239496, z: -0.006314307}
