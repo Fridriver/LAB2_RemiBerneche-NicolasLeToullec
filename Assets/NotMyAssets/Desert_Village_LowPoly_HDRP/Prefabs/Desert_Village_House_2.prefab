@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8005852904437187278}
   - component: {fileID: 1399939399631790865}
   - component: {fileID: 7891690959719081638}
-  - component: {fileID: 7078463913854123037}
   - component: {fileID: 3126561140207658983}
   m_Layer: 0
   m_Name: House_2_Windows
@@ -85,22 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7078463913854123037
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563238099602991294}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &3126561140207658983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -125,7 +108,6 @@ GameObject:
   - component: {fileID: 8869531734871091684}
   - component: {fileID: 5758524557250690888}
   - component: {fileID: 718106565951255777}
-  - component: {fileID: 1137488070343398116}
   - component: {fileID: 1846772751247474179}
   m_Layer: 0
   m_Name: House_2_Door_Platband
@@ -199,22 +181,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &1137488070343398116
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565573952108710955}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1846772751247474179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -239,7 +205,6 @@ GameObject:
   - component: {fileID: 8214632347960622750}
   - component: {fileID: 7342737065188085167}
   - component: {fileID: 1225671892855425945}
-  - component: {fileID: 5020845953821402777}
   - component: {fileID: 6362260319043491921}
   m_Layer: 0
   m_Name: House_2_Stairs_to_Roof
@@ -313,22 +278,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &5020845953821402777
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 617122044896503297}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &6362260319043491921
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -353,7 +302,6 @@ GameObject:
   - component: {fileID: 8803600336622625520}
   - component: {fileID: 4302496239318311289}
   - component: {fileID: 1155485792904323646}
-  - component: {fileID: 4922538112454536747}
   - component: {fileID: 5512888317415742470}
   m_Layer: 0
   m_Name: House_2_Base
@@ -428,22 +376,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &4922538112454536747
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1297773240545568658}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &5512888317415742470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -468,7 +400,6 @@ GameObject:
   - component: {fileID: 3539523015145026002}
   - component: {fileID: 6279782977716082577}
   - component: {fileID: 6802092928218982048}
-  - component: {fileID: 999867067064289197}
   - component: {fileID: 7377221512091746375}
   m_Layer: 0
   m_Name: House_2_Beams_Towel
@@ -542,22 +473,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &999867067064289197
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715541983419458276}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &7377221512091746375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -622,7 +537,6 @@ GameObject:
   - component: {fileID: 6934139024593973769}
   - component: {fileID: 7921954801252684167}
   - component: {fileID: 8554063504871386184}
-  - component: {fileID: 6570230390575368969}
   - component: {fileID: 4352169058426878682}
   m_Layer: 0
   m_Name: House_2_Towel_Big_Roof
@@ -696,22 +610,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &6570230390575368969
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083443954097590608}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &4352169058426878682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -736,7 +634,6 @@ GameObject:
   - component: {fileID: 1963377881907896139}
   - component: {fileID: 3349511542458907416}
   - component: {fileID: 1329464575893860569}
-  - component: {fileID: 1016633484274695373}
   - component: {fileID: 4495112075146942881}
   m_Layer: 0
   m_Name: House_2_Windows_2
@@ -810,22 +707,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &1016633484274695373
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2309558470556223478}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &4495112075146942881
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -947,7 +828,6 @@ GameObject:
   - component: {fileID: 8604232149096704533}
   - component: {fileID: 5194203023614973893}
   - component: {fileID: 6832202865336469172}
-  - component: {fileID: 7721397114228144295}
   - component: {fileID: 8200632564928508164}
   m_Layer: 0
   m_Name: House_2_Door
@@ -1021,22 +901,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7721397114228144295
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345231760428736757}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &8200632564928508164
 BoxCollider:
   m_ObjectHideFlags: 0

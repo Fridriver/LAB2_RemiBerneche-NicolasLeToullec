@@ -8,9 +8,12 @@ public class Player : MonoBehaviour
     
     [SerializeField] private float _vitesse = 800f;  //Vitesse de déplacement du joueur
     private Rigidbody _rb;  // Variable pour emmagasiner le rigidbody du joueur
-    
+
+    public float speed;
+    public float rotationSpeed;
+
     //  ***** Méthodes privées *****
-    
+
     private void Start()
     {
         // Position initiale du joueur
@@ -34,6 +37,12 @@ public class Player : MonoBehaviour
         Vector3 direction = new Vector3(positionX, 0f, positionZ);  // Établi la direction du vecteur à appliquer sur le joueur
         _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;  // Applique la vélocité sur le corps du joueur dans la direction du vecteur
         // _rb.AddForce(direction * Time.fixedDeltaTime * _vitesse);  // Applique une force sur le joueur dans la direction du vecteur
+
+        if (direction != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
     }
 
     // ***** Méthodes publiques *****
