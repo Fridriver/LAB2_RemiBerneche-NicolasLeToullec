@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         // Position initiale du joueur
-        transform.position = new Vector3(45f, 0.51f, 45f);  // place le joueur à sa position initiale 
+        transform.position = new Vector3(-45f, 0.51f, -45f);  // place le joueur à sa position initiale 
         _rb = GetComponent<Rigidbody>();  // Récupère le rigidbody du Player
     }
 
