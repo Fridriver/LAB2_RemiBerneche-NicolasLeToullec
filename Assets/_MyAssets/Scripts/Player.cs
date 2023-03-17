@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         // Position initiale du joueur
-        transform.position = new Vector3(-45f, 3.51f, -45f);  // place le joueur à sa position initiale 
+        transform.position = new Vector3(-45f, 0.51f, -45f);  // place le joueur à sa position initiale 
         _rb = GetComponent<Rigidbody>();  // Récupère le rigidbody du Player
     }
 
@@ -38,13 +38,12 @@ public class Player : MonoBehaviour
         _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;  // Applique la vélocité sur le corps du joueur dans la direction du vecteur
         // _rb.AddForce(direction * Time.fixedDeltaTime * _vitesse);  // Applique une force sur le joueur dans la direction du vecteur
 
-        transform.Translate(direction * speed * Time.deltaTime, Space.World);
-
         if (direction != Vector3.zero)
         {
             Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+
     }
 
     // ***** Méthodes publiques *****
