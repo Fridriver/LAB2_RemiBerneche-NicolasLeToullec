@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a62967a3-78e3-4706-a055-71f650d56e9a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LAB2_NicolasLeToullec/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LAB2_NicolasLeToullec/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LAB2_NicolasLeToullec/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LAB2_NicolasLeToullec/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LAB2_NicolasLeToullec/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LAB2_NicolasLeToullec/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyAssets/Scripts/GestionCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyAssets/Scripts/GestionCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_MyAssets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_MyAssets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +85,8 @@
       <option name="presentableId" value="Default" />
       <updated>1678472610390</updated>
       <workItem from="1678472622219" duration="1632000" />
-      <workItem from="1679078378837" duration="4118000" />
+      <workItem from="1679078378837" duration="7285000" />
+      <workItem from="1679120890452" duration="141000" />
     </task>
     <servers />
   </component>
