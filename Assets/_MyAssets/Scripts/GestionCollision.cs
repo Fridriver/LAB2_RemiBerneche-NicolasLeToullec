@@ -8,6 +8,10 @@ public class GestionCollision : MonoBehaviour
     private GestionJeu _gestionJeu;  // Sert à récupérer le l'attribut pointage dans la classe GestionJeu
     private bool _touche;  // Booléen qui permet de détecter si l'objet a été touché
 
+    private Color _texture;
+
+    private float time = 0;
+
     // ***** Méthodes privées *****
     private void Start()
     {
@@ -23,9 +27,25 @@ public class GestionCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player" && !_touche)  // Si l'objet avec la collision s'est produite est le joueur et qu'il n'a pas déjà et touché
         {
+                _texture = gameObject.GetComponent<MeshRenderer>().material.color;
+
                 gameObject.GetComponent<MeshRenderer>().material.color = Color.red;  //change la couleur du matériel à rouge
                 _gestionJeu.AugmenterPointage();  // Appelle la méthode publique dans GestionJeu pour augmenter le pointage
                 _touche = true;  // change le booléen à vrai pour indiqué que l'objet a été touché
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")  // Si l'objet avec la collision s'est produite est le joueur et qu'il n'a pas déjà et touché
+        {
+            yield Wait 
+            gameObject.GetComponent<MeshRenderer>().material.color = _texture;  //change la couleur du matériel à rouge
+            _touche = false;  // change le booléen à vrai pour indiqué que l'objet a été touché
+        }
+        else
+        {
+
         }
     }
 }
