@@ -4890,7 +4890,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1901393265}
   - {fileID: 1176637488}
-  speed: 1
+  speed: 25
 --- !u!4 &1863235225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010649076558, guid: 79c5ef9a988048c488045c56407768ce, type: 3}
