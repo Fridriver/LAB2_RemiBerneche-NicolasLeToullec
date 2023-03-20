@@ -50,9 +50,5 @@ public class GestionCollision : MonoBehaviour
             // gameObject.GetComponent<MeshRenderer>().material.color = _texture;  //change la couleur du mat�riel � rouge
             //_touche = false;  // change le bool�en � vrai pour indiqu� que l'objet a �t� touch�
         }
-        else
-        {
-
-        }
     }
 }
