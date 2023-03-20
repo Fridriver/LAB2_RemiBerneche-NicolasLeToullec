@@ -2539,6 +2539,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79460dca4d4ac964584b1adc9fd14c21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &606245176
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606245174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5043808, y: 0.6436021, z: 0.49656528}
+  m_Center: {x: 0.00016938015, y: 0.074375905, z: 0.0019275673}
 --- !u!4 &609211676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011143004732, guid: 46fef82a1bf92374096a89660fd2a186, type: 3}

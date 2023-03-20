@@ -7,8 +7,12 @@ public class GestionJeu : MonoBehaviour
     // ***** Attributs *****
 
     private int _pointage = 0;  // Attribut qui conserve le nombre d'accrochages
+
     private int _accrochageNiveau1 = 0;  // Atribut qui conserve le nombre d'accrochage pour le niveau 1
     private float _tempsNiveau1 = 0.0f;  // Attribut qui conserve le temps pour le niveau 1
+
+    private int _accrochageNiveau2 = 0;  // Atribut qui conserve le nombre d'accrochage pour le niveau 2
+    private float _tempsNiveau2 = 0.0f;  // Attribut qui conserve le temps pour le niveau 2
 
     // ***** Méthodes privées *****
     private void Awake()

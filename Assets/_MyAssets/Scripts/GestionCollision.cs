@@ -5,6 +5,7 @@ using UnityEngine;
 public class GestionCollision : MonoBehaviour
 {
     // ***** Attributs *****
+
     private GestionJeu _gestionJeu;  // Sert � r�cup�rer le l'attribut pointage dans la classe GestionJeu
     private bool _touche;  // Bool�en qui permet de d�tecter si l'objet a �t� touch�
 
@@ -16,7 +17,7 @@ public class GestionCollision : MonoBehaviour
     private void Start()
     {
         _gestionJeu = FindObjectOfType<GestionJeu>();  // lie la variable au gameObject GestionJeu de la sc�ne
-        _touche= false;  // initialise le bool�en � faux au d�but de la sc�ne
+        _touche = false;  // initialise le bool�en � faux au d�but de la sc�ne
     }
 
     /* 
