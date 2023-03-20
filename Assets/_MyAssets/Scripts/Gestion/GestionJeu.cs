@@ -48,7 +48,7 @@ public class GestionJeu : MonoBehaviour
     }
 
     // ***** Méthodes publiques ******
-    
+
     /*
      * Méthode publique qui permet d'augmenter le pointage de 1
      */
@@ -80,5 +80,26 @@ public class GestionJeu : MonoBehaviour
     {
         _accrochageNiveau1 = accrochages;
         _tempsNiveau1 = tempsNiv1;
+    }
+
+    // ----------------------------------------------------
+
+    // Accesseur qui retourne le temps pour le niveau 2
+    public float GetTempsNiv2()
+    {
+        return _tempsNiveau2;
+    }
+
+    // Accesseur qui retourne le nombre d'accrochages pour le niveau 2
+    public int GetAccrochagesNiv2()
+    {
+        return _accrochageNiveau2;
+    }
+
+    // Méthode qui reçoit les valeurs pour le niveau 2 et qui modifie les attributs respectifs
+    public void SetNiveau2(int accrochages, float tempsNiv2)
+    {
+        _accrochageNiveau2 = accrochages;
+        _tempsNiveau2 = tempsNiv2;
     }
 }
