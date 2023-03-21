@@ -6530,7 +6530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _listePieges:
   - {fileID: 749671173}
-  _intensiteForce: 2500
+  _intensiteForce: 4000
 --- !u!1 &1671162087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 113512, guid: 76d0990ce6d878544bdb1bc9f388dbce, type: 3}

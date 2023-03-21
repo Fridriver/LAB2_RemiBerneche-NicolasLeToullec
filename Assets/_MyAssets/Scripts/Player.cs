@@ -32,11 +32,11 @@ public class Player : MonoBehaviour
      */
     private void MouvementsJoueur()
     {
-        float positionX = Input.GetAxis("Horizontal"); // R�cup�re la valeur de l'axe horizontal de l'input manager
-        float positionZ = Input.GetAxis("Vertical");  // R�cup�re la valeur de l'axe vertical de l'input manager
-        Vector3 direction = new Vector3(positionX, 0f, positionZ);  // �tabli la direction du vecteur � appliquer sur le joueur
-        _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;  // Applique la v�locit� sur le corps du joueur dans la direction du vecteur
-        // _rb.AddForce(direction * Time.fixedDeltaTime * _vitesse);  // Applique une force sur le joueur dans la direction du vecteur
+        float positionX = Input.GetAxis("Horizontal"); // Récupére la valeur de l'axe horizontal de l'input manager
+        float positionZ = Input.GetAxis("Vertical");  // Récupére la valeur de l'axe vertical de l'input manager
+        Vector3 direction = new Vector3(positionX, 0f, positionZ);  // Établi la direction du vecteur à appliquer sur le joueur
+        _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;  // Applique la vélocité sur le corps du joueur dans la direction du vecteur
+        //_rb.AddForce(direction * Time.fixedDeltaTime * _vitesse);  // Applique une force sur le joueur dans la direction du vecteur
 
         if (direction != Vector3.zero)
         {
