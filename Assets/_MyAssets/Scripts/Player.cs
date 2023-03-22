@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     // ***** Attributs *****
 
+    [SerializeField] private Transform _playerFront;
+
     [SerializeField] private float _vitesse = 800f;  //Vitesse de d�placement du joueur
     private Rigidbody _rb;  // Variable pour emmagasiner le rigidbody du joueur
 
@@ -36,12 +38,14 @@ public class Player : MonoBehaviour
         float positionZ = Input.GetAxis("Vertical");  // Récupére la valeur de l'axe vertical de l'input manager
         Vector3 direction = new Vector3(positionX, 0f, positionZ);  // Établi la direction du vecteur à appliquer sur le joueur
         _rb.velocity = direction * Time.fixedDeltaTime * _vitesse;  // Applique la vélocité sur le corps du joueur dans la direction du vecteur
-        //_rb.AddForce(direction * Time.fixedDeltaTime * _vitesse);  // Applique une force sur le joueur dans la direction du vecteur
 
         if (direction != Vector3.zero)
         {
             Quaternion toRotation = Quaternion.LookRotation(direction, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+
+            // Fait tourner le playerFront dans la même direction que le joueur
+            _playerFront.rotation = Quaternion.LookRotation(direction);
         }
 
     }
