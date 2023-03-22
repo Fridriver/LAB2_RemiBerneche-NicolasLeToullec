@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class FinPartie : MonoBehaviour
 {
     // ***** Attributs *****
-    
+
     private bool _finPartie = false;  // booléen qui détermine si la partie est terminée
     private GestionJeu _gestionJeu; // attribut qui contient un objet de type GestionJeu
     private Player _player;  // attribut qui contient un objet de type Player
@@ -18,6 +18,8 @@ public class FinPartie : MonoBehaviour
         _gestionJeu = FindObjectOfType<GestionJeu>();  // récupère sur la scène le gameObject de type GestionJeu
         _player = FindObjectOfType<Player>();  // récupère sur la scène le gameObject de type Player
     }
+
+
 
     /*
      * Méthode qui se produit quand il y a collision avec le gameObject de fin
@@ -36,11 +38,11 @@ public class FinPartie : MonoBehaviour
 
                 float tempsTotalniv1 = _gestionJeu.GetTempsNiv1() + _gestionJeu.GetAccrochagesNiv1();  //Calcul le temps total pour le niveau 1
 
-                float _tempsNiveau2 = Time.time - _gestionJeu.GetTempsNiv1(); // Calcul le temps pour le niveau 2
+                float _tempsNiveau2 = _gestionJeu.GetTempsNiv2() - _gestionJeu.GetTempsNiv1(); // Calcul le temps pour le niveau 2
                 int _accrochagesNiveau2 = accrochages - _gestionJeu.GetAccrochagesNiv1() - _gestionJeu.GetAccrochagesNiv2(); // Calcul le nombre d'accrochages pour le niveau 2
                 float tempsTotalniv2 = _tempsNiveau2 + _accrochagesNiveau2; // Calcul le temps total pour le niveau 2
 
-                float _tempsNiveau3 = Time.time - _tempsNiveau2; // Calcul le temps pour le niveau 3
+                float _tempsNiveau3 = Time.time - _gestionJeu.GetTempsNiv2(); // Calcul le temps pour le niveau 3
                 int _accrochagesNiveau3 = accrochages - _gestionJeu.GetAccrochagesNiv2(); // Calcul le nombre d'accrochages pour le niveau 3
                 float tempsTotalniv3 = _tempsNiveau3 + _accrochagesNiveau3; // Calcul le temps total pour le niveau 3
 
@@ -63,7 +65,7 @@ public class FinPartie : MonoBehaviour
                 Debug.Log("Temps total niveau 3 : " + tempsTotalniv3.ToString("f2") + " secondes");
 
                 Debug.Log("Le temps total pour les trois niveau est de : " + (tempsTotalniv1 + tempsTotalniv2 + tempsTotalniv3).ToString("f2") + " secondes");
- 
+
                 _player.finPartieJoueur();  // Appeler la méthode publique dans Player pour désactiver le joueur
             }
             else if (noScene == 0) // Si nous somme sur la première scène (scène 0)

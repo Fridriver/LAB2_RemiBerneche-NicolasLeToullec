@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // ***** Attributs *****
-    
+
     [SerializeField] private float _vitesse = 800f;  //Vitesse de d�placement du joueur
     private Rigidbody _rb;  // Variable pour emmagasiner le rigidbody du joueur
 
