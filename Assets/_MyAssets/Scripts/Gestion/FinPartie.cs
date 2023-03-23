@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FinPartie : MonoBehaviour
 {
     // ***** Attributs *****
+
+    private float _tempsDebut = 0f;
+    private bool _debutPartie = false;
 
     private bool _finPartie = false;  // booléen qui détermine si la partie est terminée
     private GestionJeu _gestionJeu; // attribut qui contient un objet de type GestionJeu
@@ -19,7 +23,17 @@ public class FinPartie : MonoBehaviour
         _player = FindObjectOfType<Player>();  // récupère sur la scène le gameObject de type Player
     }
 
+    private void Update()
+    {
+        int noScene = SceneManager.GetActiveScene().buildIndex;
 
+        if (!_debutPartie && Input.anyKeyDown && noScene == 0)
+        {
+            _debutPartie = true;
+            _tempsDebut += Time.time;
+            Debug.Log("GO : " + _tempsDebut.ToString("f2"));
+        }
+    }
 
     /*
      * Méthode qui se produit quand il y a collision avec le gameObject de fin
@@ -65,6 +79,7 @@ public class FinPartie : MonoBehaviour
                 Debug.Log("Temps total niveau 3 : " + tempsTotalniv3.ToString("f2") + " secondes");
 
                 Debug.Log("Le temps total pour les trois niveau est de : " + (tempsTotalniv1 + tempsTotalniv2 + tempsTotalniv3).ToString("f2") + " secondes");
+                Debug.Log("Temps sans jouer : " + _tempsDebut.ToString("f2"));
 
                 _player.finPartieJoueur();  // Appeler la méthode publique dans Player pour désactiver le joueur
             }
