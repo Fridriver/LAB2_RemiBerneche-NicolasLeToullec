@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     public float speed;
     public float rotationSpeed;
 
-    //  ***** M�thodes priv�es *****
+    //  ***** M�thodes privées *****
 
     private void Start()
     {
@@ -23,14 +23,14 @@ public class Player : MonoBehaviour
         _rb = GetComponent<Rigidbody>();  // R�cup�re le rigidbody du Player
     }
 
-    // Ici on utilise FixedUpdate car les mouvements du joueurs implique le d�placement d'un rigidbody
+    // Ici on utilise FixedUpdate car les mouvements du joueurs implique le déplacement d'un rigidbody
     private void FixedUpdate()
     {
         MouvementsJoueur();
     }
 
     /*
-     * M�thode qui g�re les d�placements du joueur
+     * M�thode qui gére les déplacements du joueur
      */
     private void MouvementsJoueur()
     {
@@ -53,10 +53,10 @@ public class Player : MonoBehaviour
     // ***** M�thodes publiques *****
 
     /*
-     * M�thode appel� en fin de partie qui rend le gameObject Player inactif
+     * Méthode appelé en fin de partie qui rend le gameObject Player inactif
      */
     public void finPartieJoueur()
     {
-        gameObject.SetActive(false);  // D�sactive le gameObject
+        gameObject.SetActive(false);  // Désactive le gameObject
     }
 }
