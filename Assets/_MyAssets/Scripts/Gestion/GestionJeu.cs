@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GestionJeu : MonoBehaviour
 {
     // ***** Attributs *****
+
+    private float _tempsDebut = 0f;
+    private bool _debutPartie = false;
 
     private int _pointage = 0;  // Attribut qui conserve le nombre d'accrochages
 
@@ -36,6 +40,18 @@ public class GestionJeu : MonoBehaviour
     private void Start()
     {
         InstructionsDepart();  // Affiche les instructions de départ
+    }
+
+    private void Update()
+    {
+        int noScene = SceneManager.GetActiveScene().buildIndex;
+
+        if (!_debutPartie && Input.anyKeyDown && noScene == 0)
+        {
+            _debutPartie = true;
+            _tempsDebut += Time.time;
+            Debug.Log("GO : " + _tempsDebut.ToString("f2"));
+        }
     }
 
     /*
@@ -103,5 +119,11 @@ public class GestionJeu : MonoBehaviour
     {
         _accrochageNiveau2 = accrochages;
         _tempsNiveau2 = tempsNiv2;
+    }
+
+    //Méthode qui reçois le timer sans bouger au début
+    public float GetTempsDebut()
+    {
+        return _tempsDebut;
     }
 }

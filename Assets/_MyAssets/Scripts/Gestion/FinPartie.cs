@@ -8,10 +8,7 @@ public class FinPartie : MonoBehaviour
 {
     // ***** Attributs *****
 
-    private float _tempsDebut = 0f;
-    private bool _debutPartie = false;
-
-    private bool _finPartie = false;  // booléen qui détermine si la partie est terminée
+    //private bool _finPartie = false;  // booléen qui détermine si la partie est terminée
     private GestionJeu _gestionJeu; // attribut qui contient un objet de type GestionJeu
     private Player _player;  // attribut qui contient un objet de type Player
 
@@ -21,18 +18,6 @@ public class FinPartie : MonoBehaviour
     {
         _gestionJeu = FindObjectOfType<GestionJeu>();  // récupère sur la scène le gameObject de type GestionJeu
         _player = FindObjectOfType<Player>();  // récupère sur la scène le gameObject de type Player
-    }
-
-    private void Update()
-    {
-        int noScene = SceneManager.GetActiveScene().buildIndex;
-
-        if (!_debutPartie && Input.anyKeyDown && noScene == 0)
-        {
-            _debutPartie = true;
-            _tempsDebut += Time.time;
-            Debug.Log("GO : " + _tempsDebut.ToString("f2"));
-        }
     }
 
     /*
@@ -64,22 +49,23 @@ public class FinPartie : MonoBehaviour
                 Debug.Log("Fin de partie !!!!!!!");
 
                 // Message pour le niveau 1
-                Debug.Log("Le temps pour le niveau 1 est de : " + _gestionJeu.GetTempsNiv1().ToString("f2") + " secondes");
+                Debug.Log("Le temps pour le niveau 1 est de : " + (_gestionJeu.GetTempsNiv1() - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
                 Debug.Log("Vous avez accroché au niveau 1 : " + _gestionJeu.GetAccrochagesNiv1() + " obstacles");
-                Debug.Log("Temps total niveau 1 : " + tempsTotalniv1.ToString("f2") + " secondes");
+                Debug.Log("Temps total niveau 1 : " + (tempsTotalniv1 - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
 
                 // Message pour le niveau 2
-                Debug.Log("Le temps pour le niveau 2 est de : " + _tempsNiveau2.ToString("f2") + " secondes");
+                Debug.Log("Le temps pour le niveau 2 est de : " + (_tempsNiveau2 - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
                 Debug.Log("Vous avez accroché au niveau 2 : " + _accrochagesNiveau2 + " obstacles");
-                Debug.Log("Temps total niveau 2 : " + tempsTotalniv2.ToString("f2") + " secondes");
+                Debug.Log("Temps total niveau 2 : " + (tempsTotalniv2 - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
 
                 // Message pour le niveau 3
-                Debug.Log("Le temps pour le niveau 3 est de : " + _tempsNiveau3.ToString("f2") + " secondes");
+                Debug.Log("Le temps pour le niveau 3 est de : " + (_tempsNiveau3 - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
                 Debug.Log("Vous avez accroché au niveau 3 : " + _accrochagesNiveau3 + " obstacles");
-                Debug.Log("Temps total niveau 3 : " + tempsTotalniv3.ToString("f2") + " secondes");
+                Debug.Log("Temps total niveau 3 : " + (tempsTotalniv3 - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
 
-                Debug.Log("Le temps total pour les trois niveau est de : " + (tempsTotalniv1 + tempsTotalniv2 + tempsTotalniv3).ToString("f2") + " secondes");
-                Debug.Log("Temps sans jouer : " + _tempsDebut.ToString("f2"));
+                Debug.Log("Le temps total pour les trois niveau est de : " + ((tempsTotalniv1 + tempsTotalniv2 + tempsTotalniv3) - _gestionJeu.GetTempsDebut()).ToString("f2") + " secondes");
+
+                Debug.Log("Temps sans jouer : " + _gestionJeu.GetTempsDebut().ToString("f2") + " secondes");
 
                 _player.finPartieJoueur();  // Appeler la méthode publique dans Player pour désactiver le joueur
             }
