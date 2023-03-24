@@ -50,7 +50,7 @@ public class GestionJeu : MonoBehaviour
         {
             _debutPartie = true;
             _tempsDebut += Time.time;
-            Debug.Log("GO : " + _tempsDebut.ToString("f2"));
+            //Debug.Log("GO : " + _tempsDebut.ToString("f2"));
         }
     }
 
@@ -62,7 +62,6 @@ public class GestionJeu : MonoBehaviour
         Debug.Log("*** Course à obstacles");
         Debug.Log("Le but du jeu est d'atteindre la zone d'arrivée le plus rapidement possible");
         Debug.Log("Chaque contact avec un obstable entraînera une pénalité");
-        Debug.Log("");
     }
 
     // ***** Méthodes publiques ******
